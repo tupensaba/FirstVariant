@@ -2,8 +2,8 @@
 ТЗ от компании "Пряники"
 
 # GET запросы:
-Получить информациб о всех заказах:
-GET:https://localhost:44306/api/Orders
+//Получить информациб о всех заказах:
+//GET:https://localhost:44306/api/Orders
 Список товаров:
 GET:https://localhost:44306/api/Orders/GoodsList
 Список покупателей:
