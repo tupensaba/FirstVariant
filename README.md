@@ -2,18 +2,18 @@
 ТЗ от компании "Пряники"
 
 # GET запросы:
-//Получить информациб о всех заказах:
-//GET:https://localhost:44306/api/Orders
+Получить информациб о всех заказах:
+*GET:https://localhost:44306/api/Orders
 Список товаров:
-GET:https://localhost:44306/api/Orders/GoodsList
+*GET:https://localhost:44306/api/Orders/GoodsList
 Список покупателей:
-GET:https://localhost:44306/api/Orders/CustomersList
+*GET:https://localhost:44306/api/Orders/CustomersList
 Получить информацию об определенном товаре({orderMasterId} - Номер заказа):
-GET:https://localhost:44306/api/Orders/{orderMasterId}
+*GET:https://localhost:44306/api/Orders/{orderMasterId}
 
 # PATCH запросы:
 Изменить кол-во товаров в заказе ({orderMasterId} = Номер заказа, {itemId} = Номер товара ):
-PATCH:https://localhost:44306/api/Orders/{orderMasterId},{itemId}
+*PATCH:https://localhost:44306/api/Orders/{orderMasterId},{itemId}
 JSON форма для изменения количества товара в заказе:
 ```````````````````````````````````````````````
 [
@@ -27,7 +27,7 @@ JSON форма для изменения количества товара в �
 
 # POST запросы:
 Добавить заказ:
-POST:https://localhost:44306/api/Orders/add
+*POST:https://localhost:44306/api/Orders/add
 Пример JSON POST-формы для добавления заказа:
 `````````````````````````````````````````````
 {
@@ -51,7 +51,7 @@ POST:https://localhost:44306/api/Orders/add
 }
 ``````````````````````````````````````````````````
 Добавить товар в заказ:
-POST:https://localhost:44306/api/Orders/AddGoodInOrder
+*POST:https://localhost:44306/api/Orders/AddGoodInOrder
 Пример JSON POST-формы для добавлениия товара в заказ:
 ``````````````````````````````````````````
 {
@@ -64,9 +64,9 @@ POST:https://localhost:44306/api/Orders/AddGoodInOrder
 
 # DELETE запросы:
 Удалить определенный товар из заказа({id} - номер заказа,{itemId} - номер товара):
-DELETE:https://localhost:44306/api/Orders/{id},{itemId}
+*DELETE:https://localhost:44306/api/Orders/{id},{itemId}
 Удалить определенный заказ({id} - номер заказа):
-DELETE:https://localhost:44306/api/Orders/{id}
+*DELETE:https://localhost:44306/api/Orders/{id}
 
 
 # ABOUT
